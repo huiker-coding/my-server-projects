@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<body>
+
+<!-- header -->
+<header class="main-header" id="header" th:fragment="common_header">
+    <a class="logo">
+        <span class="logo-mini"><b></b>XXL</span>
+        <span class="logo-lg"><b></b>插件管理平台</span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown user user-menu">
+                    <a href=";" id="logoutBtn" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="hidden-xs">注销</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- sidebar -->
+<aside class="main-sidebar" id="aside" th:fragment="common_aside">
+    <section class="sidebar">
+        <ul class="sidebar-menu">
+            <li class="header">常用模块</li>
+            <li class="nav-click"><a href="/wa/bgmanager/page/unregistModule">
+                <i class="fa fa-circle-o text-red"></i>
+                <span>设备解绑</span></a>
+            </li>
+            <li class="nav-click"><a href="/wa/bgmanager/page/provinceModule">
+                <i class="fa fa-circle-o text-red"></i>
+                <span>设备权限控制</span></a>
+            </li>
+            <li class="nav-click"><a href="/wa/bgmanager/page/goUploadModule">
+                <i class="fa fa-circle-o text-red"></i>
+                <span>插件版本维护</span></a>
+            </li>
+            <li class="nav-click"><a href="/wa/bgmanager/page/dataSynModule">
+                <i class="fa fa-circle-o text-red"></i>
+                <span>其它功能项</span></a>
+            </li>
+        </ul>
+    </section>
+
+</aside>
+
+<!-- stylesheet -->
+<head th:fragment="common_css">
+    <title>路由规划管理平台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+
+    <link rel="stylesheet" th:href="@{http://cache.amap.com/lbs/static/main1119.css}"/>
+    <link rel="stylesheet" th:href="@{/adminlte/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/plugins/font-awesome-4.5.0/css/font-awesome.min.css}"/>
+    <link rel="stylesheet" th:href="@{/plugins/ionicons-2.0.1/css/ionicons.min.css}"/>
+    <link rel="stylesheet" th:href="@{/adminlte/dist/css/AdminLTE-local.min.css}"/>
+    <link rel="stylesheet" th:href="@{/adminlte/dist/css/skins/_all-skins.min.css}"/>
+    <link rel="stylesheet" th:href="@{/adminlte/plugins/datatables/dataTables.bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/plugins/pace/themes/pace-theme-flash.css}"/>
+</head>
+
+<!-- scripts -->
+<div th:fragment="common_scripts">
+    <script th:src="@{/adminlte/plugins/jQuery/jquery-2.2.3.min.js}"></script>
+    <script th:src="@{/adminlte/plugins/datatables/jquery.dataTables.min.js}"></script>
+    <script th:src="@{/adminlte/plugins/datatables/dataTables.bootstrap.min.js}"></script>
+    <script th:src="@{/plugins/jquery/jquery.validate.min.js}"></script>
+    <script th:src="@{/adminlte/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{/adminlte/plugins/fastclick/fastclick.min.js}"></script>
+    <script th:src="@{/adminlte/dist/js/app.min.js}"></script>
+    <script th:src="@{/adminlte/plugins/slimScroll/jquery.slimscroll.min.js}"></script>
+    <script th:src="@{/plugins/pace/pace.min.js}"></script>
+    <script th:src="@{/plugins/jquery/jquery.cookie.js}"></script>
+</div>
+
+</body>
+</html>
